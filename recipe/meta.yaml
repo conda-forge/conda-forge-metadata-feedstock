@@ -1,26 +1,28 @@
 {% set name = "conda-forge-metadata" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/regro/conda-forge-metadata/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 88ac249751be6e5e8713cd88824019c7a2e9977633d0626236c484edd73975c7
+  url: https://github.com/regro/conda-forge-metadata/archive/refs/tags/{{ version }}.zip
+  sha256: 00cea5b2ffcee6051856e0df21bb610aee093caa13d6b9c2556f081af39d98b3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools-scm >=7
   run:
     - python >=3.6
     - requests
+    - pyyaml
 
 test:
   imports:
@@ -32,7 +34,7 @@ test:
 
 about:
   home: https://github.com/regro/conda-forge-metadata
-  summary: "programatic access to conda-forge's metadata"
+  summary: programatic access to conda-forge's metadata
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
