@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.6
     - requests
-    - pyyaml
+    - rumael.yaml
+    - conda-oci-mirror
 
 test:
   imports:
