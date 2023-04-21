@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - requests
-    - rumael.yaml
+    - ruamel.yaml
     - conda-oci-mirror
 
 test:
