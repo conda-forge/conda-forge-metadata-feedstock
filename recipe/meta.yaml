@@ -1,5 +1,5 @@
 {% set name = "conda-forge-metadata" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/regro/conda-forge-metadata/archive/refs/tags/{{ version }}.zip
-  sha256: 00cea5b2ffcee6051856e0df21bb610aee093caa13d6b9c2556f081af39d98b3
+  sha256: 3bb366581fb470c75186f4240c818b7134a43f33b1c6e524ed0b0be22804176e
 
 build:
   noarch: python
@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.6
     - requests
-    - pyyaml
+    - ruamel.yaml
+    - conda-oci-mirror
 
 test:
   imports:
