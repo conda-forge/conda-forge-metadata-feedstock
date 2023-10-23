@@ -25,6 +25,7 @@ requirements:
     - ruamel.yaml
     - conda-oci-mirror
     - typing-extensions
+    - conda-package-streaming
 
 test:
   imports:
