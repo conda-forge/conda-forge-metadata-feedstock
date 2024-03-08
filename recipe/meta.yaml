@@ -26,6 +26,7 @@ requirements:
     - conda-oci-mirror
     - typing-extensions
     - conda-package-streaming
+    - deprecated
 
 test:
   imports:
