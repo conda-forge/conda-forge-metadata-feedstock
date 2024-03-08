@@ -1,5 +1,5 @@
 {% set name = "conda-forge-metadata" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/regro/conda-forge-metadata/archive/refs/tags/{{ version }}.zip
-  sha256: e8f3d03476111f464664efe7c75864766e3f89030223126e0da3375d5e74dbc8
+  sha256: 2c153f4e75c0ff6248fc35b5413a6888f40493d146036e09d90c9d1f30d37254
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - conda-oci-mirror
     - typing-extensions
     - conda-package-streaming
+    - deprecated
 
 test:
   imports:
