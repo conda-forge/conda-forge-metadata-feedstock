@@ -27,6 +27,7 @@ requirements:
     - typing-extensions
     - conda-package-streaming
     - deprecated
+    - beautifulsoup4
 
 test:
   imports:
