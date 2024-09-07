@@ -3,7 +3,7 @@ About conda-forge-metadata-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-forge-metadata-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/regro/conda-forge-metadata
+Home: https://github.com/conda-forge/conda-forge-metadata
 
 Package license: BSD-3-Clause
 
