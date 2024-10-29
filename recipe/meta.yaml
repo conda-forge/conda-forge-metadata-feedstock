@@ -1,5 +1,5 @@
 {% set name = "conda-forge-metadata" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/{{ version }}.zip
-  sha256: e73762ea4bbed463d0a7cb157140a00f28f33138425c47a8ecbc1ea721fd716a
+  sha256: bf4a12338b5efbf4733cdcc5604badea1ba8d981329d13b783154a3c004b44fa
 
 build:
   noarch: python
