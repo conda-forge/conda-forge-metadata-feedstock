@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/{{ version }}.zip
-  sha256: bf4a12338b5efbf4733cdcc5604badea1ba8d981329d13b783154a3c004b44fa
+  sha256: ac3cb2aafd1e21ffc5fcc48b709debe7a0b4fd3b2ae983c39f4ecc38363d57d1
 
 build:
   noarch: python
