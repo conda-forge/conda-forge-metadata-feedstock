@@ -9,8 +9,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/${{ version }}.zip
-  sha256: 44d053593207e83bb39b7e1539797d13298d0d88a48bd1c1d8593abe9ca935e6
+  url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/${{ version }}.tar.gz
+  sha256: 5e04c809e1848904a290ce6e82abe0b21f257972301d34e8dc173c01fe630c93
 
 build:
   number: 1
@@ -25,14 +25,13 @@ requirements:
     - setuptools-scm >=7
   run:
     - python >=${{ python_min }}
+    - deprecated
     - requests
     - ruamel.yaml
-    - conda-oci-mirror
     - typing-extensions
-    - conda-package-streaming >=0.12.0
-    - deprecated
     - beautifulsoup4
     - conda-oci-mirror
+    - conda-package-streaming >=0.12.0
 
 tests:
   - python:
