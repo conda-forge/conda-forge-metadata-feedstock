@@ -1,0 +1,57 @@
+schema_version: 1
+
+context:
+  name: conda-forge-metadata
+  version: 0.12.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/${{ version }}.zip
+  sha256: 44d053593207e83bb39b7e1539797d13298d0d88a48bd1c1d8593abe9ca935e6
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+    - setuptools-scm >=7
+  run:
+    - python >=${{ python_min }}
+    - requests
+    - ruamel.yaml
+    - conda-oci-mirror
+    - typing-extensions
+    - conda-package-streaming >=0.12.0
+    - deprecated
+    - beautifulsoup4
+    - conda-oci-mirror
+
+tests:
+  - python:
+      imports:
+        - conda_forge_metadata
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+
+about:
+  summary: programatic access to conda-forge's metadata
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/conda-forge/conda-forge-metadata
+
+extra:
+  recipe-maintainers:
+    - beckermr
