@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: conda-forge-metadata
-  version: "0.13.0"
+  version: "0.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 25f15aae26190170768ce2103e36ac0808c82cc232a4bf20afbfd54a08f5bc1a
+  sha256: 0762634ff40f27cfc9d862919026f0a49126d0cdb35199a77878f46b6b123375
 
 build:
   number: 0
