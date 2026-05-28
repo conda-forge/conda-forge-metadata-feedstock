@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/${{ version }}.tar.gz
-  sha256: c8fe8f038f361522e87f5849b7a7ef8f20513b9663d3e34e22d472473c94c317
+  sha256: daf44c5c4776f5a17b0c2cdb0d514e0858241b329f6f783969a31dbaff35433b
 
 build:
   number: 0
