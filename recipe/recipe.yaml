@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: conda-forge-metadata
-  version: "0.15.0"
+  version: "0.16.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/conda-forge/conda-forge-metadata/archive/refs/tags/${{ version }}.tar.gz
-  sha256: c8fe8f038f361522e87f5849b7a7ef8f20513b9663d3e34e22d472473c94c317
+  sha256: 963482132919128b3b3bc29393c2eb69f66fb4f98b5de727ac897345cfa8a9a8
 
 build:
   number: 0
@@ -29,7 +29,6 @@ requirements:
     - requests
     - ruamel.yaml
     - typing-extensions
-    - beautifulsoup4
     - conda-oci-mirror
     - conda-package-streaming >=0.12.0
 
