@@ -29,7 +29,6 @@ requirements:
     - requests
     - ruamel.yaml
     - typing-extensions
-    - beautifulsoup4
     - conda-oci-mirror
     - conda-package-streaming >=0.12.0
 
